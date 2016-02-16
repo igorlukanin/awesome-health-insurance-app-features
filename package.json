@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "shower-core": "^2.0.1",
+    "shower-ribbon": "^2.0.0"
+  }
+}
