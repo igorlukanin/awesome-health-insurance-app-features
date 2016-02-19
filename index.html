@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Приложение для клиентов по программе ДМС</title>
+    <title>Сервис для клиентов по программе ДМС</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
     <style>
         .err {
@@ -19,12 +20,17 @@
         ol.arbitrary-numbers li:before {
             content: attr(data-number) ". ";
         }
+
+        .fa:before {
+            color: #979a9e;
+            margin: 0 .5em 0 -1.5em;
+        }
     </style>
 </head>
 <body class="shower list">
 
 <header class="caption">
-    <h1>Приложение для клиентов по программе ДМС</h1>
+    <h1>Сервис для клиентов по программе ДМС</h1>
 
     <p></p>
 
@@ -49,7 +55,27 @@
 </header>
 
 <section class="slide">
-    <h2 class="shout">Мобильные приложения</h2>
+    <h2 class="shout">Структура<br/>сервиса</h2>
+</section>
+
+<section class="slide">
+    <h2>Приложения для всех участников</h2>
+    <ol>
+        <li>Мобильное приложение для физических лиц</li>
+        <li>Веб-приложение или интеграционный модуль для страховой компании</li>
+        <li>Веб-приложение для корпоративных клиентов — работодателей ФЛ</li>
+        <li>Веб-приложение для лечебно-профилакторного учреждения</li>
+    </ol>
+    <p>Для работы мобильного приложения не требуется наличия остальных.</p>
+</section>
+
+<section class="slide">
+    <h2>Схема взаимодействия</h2>
+    <img src="images/scheme.png" style="position: absolute; width: 65%; left: 5%; top: 30%"/>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Существующие<br/>приложения</h2>
 </section>
 
 <section class="slide">
@@ -98,7 +124,7 @@
     </ul>
 </section>
 
-<section class="slide cover">
+<section class="slide white">
     <img src="images/image02.png" class="cover"/>
 </section>
 
@@ -124,11 +150,11 @@
     </ul>
 </section>
 
-<section class="slide cover">
+<section class="slide white">
     <img src="images/image01.png" class="cover"/>
 </section>
 
-<section class="slide cover">
+<section class="slide white">
     <img src="images/image05.png" class="cover"/>
 </section>
 
@@ -143,7 +169,7 @@
     </ul>
 </section>
 
-<section class="slide cover">
+<section class="slide white">
     <img src="images/image00.png" class="cover"/>
 </section>
 
@@ -158,7 +184,7 @@
     </ul>
 </section>
 
-<section class="slide cover">
+<section class="slide white">
     <img src="images/image04.png" class="cover"/>
 </section>
 
@@ -173,7 +199,7 @@
     </ul>
 </section>
 
-<section class="slide cover">
+<section class="slide white">
     <img src="images/image06.png" class="cover"/>
 </section>
 
@@ -188,7 +214,7 @@
     </ul>
 </section>
 
-<section class="slide cover">
+<section class="slide white">
     <img src="images/image03.png" class="cover"/>
 </section>
 
@@ -203,8 +229,100 @@
     </ul>
 </section>
 
-<section class="slide cover">
+<section class="slide white">
     <img src="images/image07.png" class="cover"/>
+</section>
+
+<section class="slide">
+    <h2>Мобильные приложения</h2>
+    <ul>
+        <li>Были или есть у 7 из 20 крупнейших компаний</li>
+        <li>Обычно для всех клиентов, редко — для путешественников</li>
+        <li>3 компании разработали самостоятельно, 4 заказали у подрядчиков</li>
+    </ul>
+    <p>Только у АльфаСтрахования есть функции, связанные с ДМС.</p>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Приложение<br/>для физ. лиц</h2>
+</section>
+
+<section class="slide">
+    <h2>Общие функции</h2>
+    <ul>
+        <li>Хранение данных всех полисов</li>
+        <li>Напоминание об окончании срока действия полиса</li>
+        <li>Продление и покупка полисов</li>
+        <li>Новости и специальные предложения страховой компании</li>
+        <li>Просмотр информации об офисах страховой компании</li>
+        <li>Оценки и отзывы об офисах страховой компании</li>
+        <li>Обращение с страховую компанию через чат в приложении</li>
+        <li>Заказ обратного звонка из страховой компании</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Функции, связанные с ДМС</h2>
+    <ul>
+        <li>Запись на приём в больницу</li>
+        <li>Напоминание о записи на приём</li>
+        <li>Запрос и получение гарантийного письма</li>
+        <li>Просмотр истории обращений в страховую компанию</li>
+    </ul>
+</section>
+
+<section class="slide white">
+    <img src="images/story-map.png" class="cover"/>
+</section>
+
+<section class="slide">
+    <h2>Прототип мобильного приложения</h2>
+    <p><span class="fa fa-external-link"></span><a href="http://bit.ly/awesome-app" target="_blank">bit.ly/awesome-app</a></p>
+    <ul>
+        <li>Создан для тестирования сценария записи в больницу</li>
+        <li>Проверен на работниках СКБ Контур с депозитной программой ДМС</li>
+    </ul>
+    <img src="images/mobile-1.png" style="position: absolute; width: 40%; left: 10%; top: 57.5%"/>
+    <img src="images/mobile-2.png" style="position: absolute; width: 40%; left: 50%; top: 57.5%"/>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Веб-приложения</h2>
+</section>
+
+<section class="slide">
+    <h2>Прототип веб-приложений</h2>
+    <p style="line-height: 1.5em">Корпоративные клиенты, страховая компания и ЛПУ обмениваются особыми типами формализованных документов через <a href="http://diadoc.ru" target="_blank">Диадок</a>.</p>
+    <img src="images/web.png" style="position: absolute; width: 90%; left: 5%; top: 45%"/>
+</section>
+
+<section class="slide">
+    <h2>Функции для страховой компании</h2>
+    <ul>
+        <li>Корректировка списков лиц, подключённых к программе ДМС</li>
+        <li>Отправка дополнительных соглашений к договору страхования</li>
+        <li>Публикация информации о страховой компании, условий программ</li>
+        <li>Обмен закрывающими документами с ЛПУ</li>
+        <li>Поддержка физических лиц</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Функции для корпоративных клиентов</h2>
+    <ul>
+        <li>Корректировка списков работников, подключённых к программе ДМС</li>
+        <li>Подписание дополнительных соглашений к договору страхования</li>
+        <li>Личный кабинет работника для подключения к программе ДМС</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Функции для ЛПУ</h2>
+    <ul>
+        <li>Получение гарантийных писем</li>
+        <li>Просмотр списков лиц, подключённых к программе прямого доступа</li>
+        <li>Обмен закрывающими документами со страховой компанией</li>
+    </ul>
 </section>
 
 <div class="progress">
